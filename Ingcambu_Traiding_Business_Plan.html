@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingcambu Traiding PTY LTD - Business Plan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap');
+
+  :root {
+    --primary: #7c3aed;
+    --primary-dark: #5b21b6;
+    --accent: #db2777;
+    --accent-light: #f472b6;
+    --dark: #1e1b4b;
+    --gray: #64748b;
+    --light-gray: #f1f5f9;
+    --white: #ffffff;
+    --success: #10b981;
+    --warning: #f59e0b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #334155;
+    line-height: 1.7;
+    background: var(--white);
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 25mm 20mm;
+    margin: 0 auto 20px;
+    background: var(--white);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    page-break-after: always;
+  }
+
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 247mm;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8px;
+    background: linear-gradient(90deg, var(--primary), var(--accent), var(--accent-light));
+  }
+
+  .cover-logo {
+    width: 320px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 4px 12px rgba(124,58,237,0.2));
+  }
+
+  .cover h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+
+  .cover .subtitle {
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .cover .tagline {
+    font-size: 1.05rem;
+    color: var(--gray);
+    max-width: 500px;
+    margin-bottom: 50px;
+    font-style: italic;
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .cover-meta-item {
+    text-align: center;
+  }
+
+  .cover-meta-item .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gray);
+    margin-bottom: 5px;
+  }
+
+  .cover-meta-item .value {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 1rem;
+  }
+
+  .cover-badge {
+    position: absolute;
+    bottom: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(124,58,237,0.3);
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--light-gray);
+  }
+
+  .section-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 15px;
+    line-height: 1;
+  }
+
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-top: 2px;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 25px 0 12px;
+  }
+
+  p {
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+
+  ul, ol {
+    margin-left: 22px;
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  thead {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+  }
+
+  th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--light-gray);
+  }
+
+  tbody tr:hover {
+    background: #f0e6ff;
+  }
+
+  .text-right { text-align: right; }
+  .text-center { text-align: center; }
+  .font-bold { font-weight: 700; }
+
+  .info-box {
+    background: linear-gradient(135deg, #f0e6ff, #fce7f3);
+    border-left: 4px solid var(--primary);
+    padding: 18px 22px;
+    border-radius: 0 10px 10px 0;
+    margin: 20px 0;
+  }
+
+  .info-box h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-dark);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .warning-box {
+    background: linear-gradient(135deg, #fff7ed, #fef3c7);
+    border-left: 4px solid var(--warning);
+    padding: 18px 22px;
+    border-radius: 0 10px 10px 0;
+    margin: 20px 0;
+  }
+
+  .success-box {
+    background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+    border-left: 4px solid var(--success);
+    padding: 18px 22px;
+    border-radius: 0 10px 10px 0;
+    margin: 20px 0;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 20px 0;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .card {
+    background: var(--light-gray);
+    padding: 20px;
+    border-radius: 12px;
+    border-top: 3px solid var(--primary);
+  }
+
+  .card h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .stat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+    margin: 20px 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    bottom: 5px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary), var(--accent));
+    border-radius: 3px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 22px;
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--primary);
+  }
+
+  .timeline-item .phase {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+  }
+
+  .timeline-item .period {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .page-footer {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 2px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+
+  .confidential {
+    background: var(--dark);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  @media print {
+    .page {
+      box-shadow: none;
+      margin: 0;
+      page-break-after: always;
+    }
+    body { background: white; }
+  }
+
+  .small { font-size: 0.85rem; }
+
+  .highlight {
+    background: linear-gradient(120deg, #f0e6ff 0%, #f0e6ff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 88%;
+    padding: 0 4px;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="page cover">
+  <img src="data:image/png;base64,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" alt="Ingcambu Traiding Logo" class="cover-logo">
+  <div class="subtitle">Business Plan &amp; Funding Proposal</div>
+  <h1>Integrated Piggery &amp;<br>Pork Processing Enterprise</h1>
+  <p class="tagline">"From our land to your table — quality pork, community growth, and sustainable farming in the Eastern Cape."</p>
+
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <div class="label">Location</div>
+      <div class="value">Ngwetsheni Location, Mount Frere<br>Eastern Cape, 5090</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="label">Funding Sought</div>
+      <div class="value">R250,000.00</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="label">Company Reg</div>
+      <div class="value">Ingcambu Traiding<br>PTY LTD</div>
+    </div>
+  </div>
+
+  <div class="cover-badge">Prepared for Funding Submission &mdash; August 2026</div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">01</div>
+    <div>
+      <div class="section-title">Executive Summary</div>
+      <div class="section-subtitle">Opportunity, strategy, and funding request at a glance</div>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="card">
+      <div class="stat">R250K</div>
+      <h4>Funding Required</h4>
+      <p>Seed capital for infrastructure, breeding stock, and processing equipment.</p>
+    </div>
+    <div class="card">
+      <div class="stat">18 Mo</div>
+      <h4>Break-even Target</h4>
+      <p>Conservative projection based on 4-sow starter herd scaling to retail supply.</p>
+    </div>
+    <div class="card">
+      <div class="stat">100%</div>
+      <h4>Black-Owned</h4>
+      <p>Level 1 B-BBEE contributor. Qualifies for DTI, SEFA, and NYDA funding windows.</p>
+    </div>
+  </div>
+
+  <h3>The Opportunity</h3>
+  <p>The Eastern Cape remains one of South Africa's most underserved pork markets. Cold-chain penetration is below the national average, and rural communities like Mount Frere rely on expensive meat transported from KwaZulu-Natal or the Free State. <span class="highlight">Ingcambu Traiding PTY LTD</span> will close this gap by producing and processing pork locally on our own land in Ngwetsheni — creating jobs, reducing food costs, and capturing margin that currently leaves the district.</p>
+
+  <h3>Business Model</h3>
+  <p>We operate a <strong>vertically integrated</strong> model:</p>
+  <ol>
+    <li><strong>Farm:</strong> Breed and fatten pigs on-site using modern, hygienic housing.</li>
+    <li><strong>Process:</strong> Slaughter at registered abattoirs; cut, debone, and manufacture viennas, sausages, and fresh cuts in our on-farm processing facility.</li>
+    <li><strong>Distribute:</strong> Sell to local households, independent butcheries, and formal retail chains (Shoprite, Spar, Chester Meat Market).</li>
+  </ol>
+
+  <h3>Funding Request</h3>
+  <p>We seek <strong>R250,000</strong> to establish Phase 1 operations. This capital will be deployed across farm infrastructure (48%), breeding stock (26%), processing equipment (20%), and working capital (6%). The funding will enable us to reach monthly production of 12–15 finished pigs within 12 months, with a clear pathway to supermarket supply contracts by Month 18.</p>
+
+  <div class="success-box">
+    <h4>Why Fund Ingcambu Traiding?</h4>
+    <p style="margin:0;">We own the land. We are registered. We understand our community. And we have a realistic, phased plan that starts with proven farming practices and scales into value-added processing — the exact model that creates sustainable rural employment and food security.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 2 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">02</div>
+    <div>
+      <div class="section-title">Company Overview</div>
+      <div class="section-subtitle">Legal structure, ownership, and strategic positioning</div>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th colspan="2">Company Particulars</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Registered Name</strong></td><td>Ingcambu Traiding PTY LTD</td></tr>
+      <tr><td><strong>Registration Status</strong></td><td>Registered with CIPC (Companies and Intellectual Property Commission)</td></tr>
+      <tr><td><strong>Legal Form</strong></td><td>Private Company Limited by Shares</td></tr>
+      <tr><td><strong>B-BBEE Status</strong></td><td>100% Black-Owned (Level 1 Contributor)</td></tr>
+      <tr><td><strong>Tax Status</strong></td><td>Registered with SARS; Tax Clearance Certificate available on request</td></tr>
+      <tr><td><strong>Physical Address</strong></td><td>Ngwetsheni Location, Mount Frere, Eastern Cape, 5090</td></tr>
+      <tr><td><strong>Operational Address</strong></td><td>Same as above — farming and processing conducted on owned land</td></tr>
+      <tr><td><strong>Industry</strong></td><td>Livestock Production & Meat Processing (SIC: 0146 / 1010)</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Vision & Mission</h3>
+  <div class="grid-2">
+    <div class="card">
+      <h4>Vision</h4>
+      <p>To become the leading pork producer and processor in the Alfred Nzo District, supplying fresh and processed pork products that meet national retail standards while creating sustainable employment in Ngwetsheni.</p>
+    </div>
+    <div class="card">
+      <h4>Mission</h4>
+      <p>To produce high-quality, hygienically processed pork using ethical farming practices; to build a trusted brand that serves our community first and grows into formal retail; and to reinvest profits into expanding opportunity for local residents.</p>
+    </div>
+  </div>
+
+  <h3>Founder's Background</h3>
+  <p>Praiseman Yamkela Nongqotho, the founder and Managing Director of Ingcambu Traiding PTY LTD, brings a unique blend of technical expertise and hands-on rural experience to this enterprise. Having worked in <strong>automation engineering</strong>, Praiseman developed a deep interest in systems, processes, and efficiency — skills that translate directly into building a modern, well-managed piggery and processing operation.</p>
+
+  <p>Growing up in Ngwetsheni with pigs at home, Praiseman learned the fundamentals of pig rearing from an early age — taking care of the animals, understanding their behaviour, and selling meat to locals. This lifelong familiarity with pork production, combined with professional engineering discipline, gives Ingcambu Traiding a rare advantage: <strong>technical rigour rooted in community trust and local knowledge.</strong></p>
+
+  <div class="info-box">
+    <h4>Why This Matters</h4>
+    <p style="margin:0;">Automation engineering taught systematic thinking, process control, and quality assurance — the same principles required for HACCP-compliant food processing and efficient farm management. Growing up with pigs provided the practical foundation. Together, these experiences make Ingcambu Traiding a credible, capable investment.</p>
+  </div>
+  <h3>Strategic Objectives (3-Year Horizon)</h3>
+  <table>
+    <thead>
+      <tr><th>Objective</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Sow herd size</td><td>4 sows</td><td>10 sows</td><td>20 sows</td></tr>
+      <tr><td>Pigs finished/month</td><td>6–8</td><td>15–20</td><td>35–40</td></tr>
+      <tr><td>Processing capacity</td><td>Basic cutting &amp; sausages</td><td>Vienna &amp; bacon line</td><td>Full retail-ready facility</td></tr>
+      <tr><td>Direct employment</td><td>2 jobs</td><td>5 jobs</td><td>10 jobs</td></tr>
+      <tr><td>Revenue target</td><td>R220,000</td><td>R650,000</td><td>R1,200,000</td></tr>
+      <tr><td>Retail supply</td><td>Local only</td><td>Spar (local)</td><td>Shoprite, Spar, Chester</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 3 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">03</div>
+    <div>
+      <div class="section-title">Market Analysis</div>
+      <div class="section-subtitle">Industry landscape, demand drivers, and competitive positioning</div>
+    </div>
+  </div>
+
+  <h3>Industry Context</h3>
+  <p>South Africa consumes approximately <strong>240,000 tonnes</strong> of pork annually. The industry is dominated by large-scale commercial producers in the Free State, North West, and Mpumalanga. However, the Eastern Cape remains significantly underserved — cold-chain infrastructure and abattoir capacity are well below the national average, forcing rural retailers to source pork from distant provinces at high transport cost.</p>
+
+  <p>This structural gap creates a clear opportunity for <strong>localised production</strong>. By farming and processing in Mount Frere, Ingcambu Traiding can deliver fresher product at lower cost than competitors shipping from KZN or Gauteng.</p>
+
+  <div class="info-box">
+    <h4>Key Market Insight</h4>
+    <p style="margin:0;">Five retail chains — Shoprite, Pick n Pay, Spar, Woolworths, and Massmart — control over 60% of South Africa's processed meat distribution. Spar and Shoprite are actively seeking emerging, local suppliers to meet their B-BBEE and local procurement targets. This is our entry door.</p>
+  </div>
+
+  <h3>Target Market Segmentation</h3>
+  <table>
+    <thead>
+      <tr><th>Segment</th><th>Channel</th><th>Volume</th><th>Margin</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Local Community</strong><br><span class="small">Households, events, caterers</span></td><td>Direct farm sales, local spaza shops, taxi ranks</td><td>High</td><td>Medium</td></tr>
+      <tr><td><strong>Independent Butcheries</strong><br><span class="small">Mount Frere, Maluti, Matatiele</span></td><td>Whole carcasses &amp; primal cuts on consignment</td><td>Medium</td><td>Medium</td></tr>
+      <tr><td><strong>Formal Retail</strong><br><span class="small">Shoprite, Spar, Chester</span></td><td>Contract supply of packaged fresh &amp; processed pork</td><td>High</td><td>High (with scale)</td></tr>
+      <tr><td><strong>Institutional</strong><br><span class="small">Schools, churches, funerals</span></td><td>Bulk whole-pig orders</td><td>Seasonal</td><td>Medium</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Competitive Advantage</h3>
+  <div class="grid-2">
+    <div class="card">
+      <h4>Land Ownership</h4>
+      <p>We own the land in Ngwetsheni. Zero rental cost. Zero relocation risk. Full control over expansion.</p>
+    </div>
+    <div class="card">
+      <h4>Local Proximity</h4>
+      <p>Fresher product than competitors. Lower transport costs. Deeper community trust and loyalty.</p>
+    </div>
+    <div class="card">
+      <h4>Vertical Integration</h4>
+      <p>Farm-to-fork control captures margin at every stage. Quality assurance from breeding to packaging.</p>
+    </div>
+    <div class="card">
+      <h4>B-BBEE Level 1</h4>
+      <p>100% black-owned status makes us an attractive procurement partner for retailers with transformation targets.</p>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 4 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">04</div>
+    <div>
+      <div class="section-title">Products &amp; Services</div>
+      <div class="section-subtitle">Product lines, specifications, and quality standards</div>
+    </div>
+  </div>
+
+  <h3>Product Portfolio</h3>
+
+  <table>
+    <thead>
+      <tr><th>Category</th><th>Product</th><th>Description</th><th>Target Price (Retail)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td rowspan="3"><strong>Fresh Pork</strong></td><td>Whole Carcass</td><td>Chilled, split halves for butcheries</td><td>R42–R48/kg (dead weight)</td></tr>
+      <tr><td>Primal Cuts</td><td>Legs, shoulders, loins, bellies, chops</td><td>R55–R85/kg</td></tr>
+      <tr><td>Retail Packs</td><td>Vacuum-sealed, labelled portions</td><td>R75–R110/kg</td></tr>
+      <tr><td rowspan="4"><strong>Processed</strong></td><td>Pork Viennas</td><td>Fine emulsion, smoked, in sheep casings (22mm)</td><td>R75–R95/kg</td></tr>
+      <tr><td>Pork Sausages</td><td>Coarse ground, spiced, fresh or frozen</td><td>R65–R85/kg</td></tr>
+      <tr><td>Boerewors</td><td>Traditional South African recipe</td><td>R80–R100/kg</td></tr>
+      <tr><td>Bacon</td><td>Cured and smoked pork belly, sliced</td><td>R95–R120/kg</td></tr>
+      <tr><td><strong>Live Animals</strong></td><td>Weaners &amp; Finishers</td><td>6-week weaners or 80kg finishers for other farmers/events</td><td>R1,800–R3,800/head</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Quality &amp; Safety Standards</h3>
+  <p>All products will be manufactured under strict hygiene protocols compliant with the <strong>Meat Safety Act 40 of 2000</strong> and the <strong>Foodstuffs, Cosmetics and Disinfectants Act 54 of 1972</strong>. Our facility will obtain a <strong>Certificate of Acceptability</strong> from the Alfred Nzo District Municipality before any processing begins.</p>
+
+  <div class="warning-box">
+    <h4>Regulatory Compliance Note</h4>
+    <p style="margin:0;">Processing viennas and sausages for retail sale — especially to supermarkets — requires municipal health certification, product labelling (ingredients, net weight, expiry, storage conditions), and eventually HACCP certification. We have budgeted for phased compliance: local sales first (basic certificate), then HACCP for retail contracts.</p>
+  </div>
+
+  <h3>Packaging &amp; Branding</h3>
+  <ul>
+    <li><strong>Local sales:</strong> Simple branded plastic bags with batch number and date stamp.</li>
+    <li><strong>Butchery supply:</strong> Bulk vacuum packs in food-grade liner bags.</li>
+    <li><strong>Retail supply:</strong> Full consumer packaging with barcode, nutritional info, Ingcambu Traiding branding, and SANS labelling compliance.</li>
+  </ul>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 5 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">05</div>
+    <div>
+      <div class="section-title">Operational Plan</div>
+      <div class="section-subtitle">Infrastructure, equipment, and day-to-day operations</div>
+    </div>
+  </div>
+
+  <h3>Phase 1: Farm Infrastructure (Months 1–4)</h3>
+  <p>All structures will be built on the existing Ngwetsheni property using durable, low-maintenance materials suited to the Eastern Cape climate.</p>
+
+  <table>
+    <thead>
+      <tr><th>Infrastructure Item</th><th>Specification</th><th>Est. Cost</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Farrowing House</td><td>2 pens, concrete floor, insulated roof, 6m² each; creep boxes for piglets</td><td class="text-right">R35,000</td></tr>
+      <tr><td>Grower/Finisher Pens</td><td>4 pens, slatted/concrete floors, 10m² each; feeding &amp; watering systems</td><td class="text-right">R45,000</td></tr>
+      <tr><td>Boar Pen</td><td>1 solid partition pen, 8m², separate from sows</td><td class="text-right">R12,000</td></tr>
+      <tr><td>Feed Storage</td><td>Lockable, pest-proof shed (25m²), raised pallets</td><td class="text-right">R8,000</td></tr>
+      <tr><td>Water System</td><td>5,000L JoJo tank, gravity-fed troughs, piping</td><td class="text-right">R10,000</td></tr>
+      <tr><td>Perimeter Fencing</td><td>Pig-proof fencing (1.2m high, concrete skirt to prevent digging)</td><td class="text-right">R10,000</td></tr>
+      <tr class="font-bold"><td colspan="2">Subtotal — Infrastructure</td><td class="text-right">R120,000</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Breeding Stock Acquisition</h3>
+  <table>
+    <thead>
+      <tr><th>Stock</th><th>Quantity</th><th>Unit Cost</th><th>Total</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Pregnant Gilts/Sows (Large White × Landrace)</td><td>4</td><td>R8,000</td><td class="text-right">R32,000</td></tr>
+      <tr><td>Registered Boar (same cross)</td><td>1</td><td>R15,000</td><td class="text-right">R15,000</td></tr>
+      <tr><td>Weaners (for immediate fattening)</td><td>10</td><td>R1,800</td><td class="text-right">R18,000</td></tr>
+      <tr class="font-bold"><td colspan="3">Subtotal — Breeding Stock</td><td class="text-right">R65,000</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Phase 2: Processing Facility (Months 4–8)</h3>
+  <p>We will <strong>not</strong> build an abattoir (capital requirement exceeds R2M). Instead, we will slaughter at a registered red meat abattoir (Mthatha/Kokstad/Matatiele area) and transport carcasses to our on-farm cutting and processing room.</p>
+
+  <table>
+    <thead>
+      <tr><th>Equipment</th><th>Purpose</th><th>Est. Cost</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Stainless Steel Tables (×2)</td><td>Deboning, cutting, trimming</td><td class="text-right">R8,000</td></tr>
+      <tr><td>Industrial Meat Mincer/Grinder</td><td>Mincing for sausage &amp; vienna production</td><td class="text-right">R12,000</td></tr>
+      <tr><td>Hydraulic Sausage Stuffer (30L)</td><td>Stuffing viennas &amp; sausages in casings</td><td class="text-right">R15,000</td></tr>
+      <tr><td>Chest Freezer (500L)</td><td>Product storage at -18°C</td><td class="text-right">R8,000</td></tr>
+      <tr><td>Vacuum Packing Machine</td><td>Retail packaging, shelf-life extension</td><td class="text-right">R5,000</td></tr>
+      <tr><td>Trade-Approved Scale</td><td>Legal-for-trade weighing</td><td class="text-right">R2,000</td></tr>
+      <tr class="font-bold"><td colspan="2">Subtotal — Processing Equipment</td><td class="text-right">R50,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="info-box">
+    <h4>Processing Room Requirements</h4>
+    <p style="margin:0;">The processing room must meet municipal health standards: separate dirty/clean areas; sealed concrete or tiled floors with coving; hot &amp; cold water; hand-washing basins; fly screens; rodent-proofing; adequate drainage; and waste disposal. We will engage an Environmental Health Officer during construction to ensure compliance.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 6 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">06</div>
+    <div>
+      <div class="section-title">Financial Plan</div>
+      <div class="section-subtitle">Budget allocation, operating costs, and revenue projections</div>
+    </div>
+  </div>
+
+  <h3>Start-up Budget: R250,000</h3>
+  <table>
+    <thead>
+      <tr><th>Category</th><th>Amount</th><th>% of Budget</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Farm Infrastructure</td><td class="text-right">R120,000</td><td class="text-center">48%</td><td>Pens, roofing, water, fencing, feed store</td></tr>
+      <tr><td>Breeding Stock &amp; Weaners</td><td class="text-right">R65,000</td><td class="text-center">26%</td><td>4 sows, 1 boar, 10 weaners</td></tr>
+      <tr><td>Processing Equipment</td><td class="text-right">R50,000</td><td class="text-center">20%</td><td>Mincer, stuffer, freezers, tables, vacuum packer</td></tr>
+      <tr><td>Working Capital</td><td class="text-right">R15,000</td><td class="text-center">6%</td><td>Feed, vaccines, transport, packaging (first 3 months)</td></tr>
+      <tr class="font-bold"><td>TOTAL FUNDING REQUIRED</td><td class="text-right">R250,000</td><td class="text-center">100%</td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Monthly Operating Costs (Steady State)</h3>
+  <table>
+    <thead>
+      <tr><th>Expense Item</th><th>Monthly Cost</th><th>Annual Cost</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Feed (4 sows + piglets + 10 finishers)</td><td class="text-right">R20,000</td><td class="text-right">R240,000</td></tr>
+      <tr><td>Labour (2 farm workers)</td><td class="text-right">R8,000</td><td class="text-right">R96,000</td></tr>
+      <tr><td>Transport (to abattoir &amp; market)</td><td class="text-right">R2,500</td><td class="text-right">R30,000</td></tr>
+      <tr><td>Electricity &amp; Water</td><td class="text-right">R1,500</td><td class="text-right">R18,000</td></tr>
+      <tr><td>Vaccines, Deworming &amp; Veterinary</td><td class="text-right">R1,500</td><td class="text-right">R18,000</td></tr>
+      <tr><td>Packaging &amp; Labelling</td><td class="text-right">R2,000</td><td class="text-right">R24,000</td></tr>
+      <tr><td>Abattoir &amp; Processing Fees</td><td class="text-right">R3,000</td><td class="text-right">R36,000</td></tr>
+      <tr><td>Miscellaneous / Contingency</td><td class="text-right">R1,500</td><td class="text-right">R18,000</td></tr>
+      <tr class="font-bold"><td>TOTAL OPERATING COSTS</td><td class="text-right">R40,000</td><td class="text-right">R480,000</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Revenue Projections (Conservative)</h3>
+  <table>
+    <thead>
+      <tr><th>Revenue Stream</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Live pig sales (finishers &amp; weaners)</td><td class="text-right">R176,000</td><td class="text-right">R420,000</td><td class="text-right">R840,000</td></tr>
+      <tr><td>Fresh pork cuts (local &amp; butcheries)</td><td class="text-right">R30,000</td><td class="text-right">R150,000</td><td class="text-right">R280,000</td></tr>
+      <tr><td>Processed products (viennas, sausages, bacon)</td><td class="text-right">R15,000</td><td class="text-right">R80,000</td><td class="text-right">R180,000</td></tr>
+      <tr class="font-bold"><td>TOTAL REVENUE</td><td class="text-right">R221,000</td><td class="text-right">R650,000</td><td class="text-right">R1,300,000</td></tr>
+      <tr><td>Total Operating Costs</td><td class="text-right">R280,000</td><td class="text-right">R480,000</td><td class="text-right">R780,000</td></tr>
+      <tr class="font-bold" style="background:#ecfdf5;"><td>NET PROFIT / (LOSS)</td><td class="text-right">(R59,000)</td><td class="text-right">R170,000</td><td class="text-right">R520,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="success-box">
+    <h4>Break-even Analysis</h4>
+    <p style="margin:0;">Year 1 reflects a small loss as the herd builds and processing capacity ramps up. Break-even is projected in <strong>Month 16</strong> once the expanded sow herd (10 sows) reaches full production and local retail contracts are secured. By Year 3, with supermarket supply active, net margins are expected to reach 35–40% on processed products.</p>
+  </div>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 7 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">07</div>
+    <div>
+      <div class="section-title">Implementation Timeline</div>
+      <div class="section-subtitle">24-month roadmap from funding to retail supply</div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="phase">Phase 1: Foundation</div>
+      <div class="period">Months 1–4</div>
+      <p>Complete farm infrastructure (farrowing house, grower pens, boar pen, fencing, water). Purchase breeding stock and first batch of weaners. Register for municipal Certificate of Acceptability. Open business bank account and finalise SARS compliance.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="phase">Phase 2: First Production Cycle</div>
+      <div class="period">Months 5–8</div>
+      <p>First farrowing (4 sows × 10 piglets = 40 piglets expected). Construct processing room and install equipment. Begin fattening first weaners to market weight (80kg). Conduct test slaughter and processing runs. Launch local sales of fresh pork.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="phase">Phase 3: Market Establishment</div>
+      <div class="period">Months 9–12</div>
+      <p>Sell first batch of finishers. Expand local customer base to 3–4 butcheries. Introduce sausages and viennas to spaza shops and taxi ranks. Refine recipes and packaging. Reinvest profits into feed and 4 additional gilts.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="phase">Phase 4: Scale &amp; Certify</div>
+      <div class="period">Months 13–18</div>
+      <p>Expand sow herd to 10. Increase monthly output to 15–20 finishers. Implement HACCP pre-requisites. Approach Spar Eastern Cape emerging supplier programme. Hire 2 additional staff. Install solar backup for refrigeration.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="phase">Phase 5: Retail Integration</div>
+      <div class="period">Months 19–24</div>
+      <p>Secure first formal retail contract (Spar or Chester). Achieve HACCP certification. Introduce bacon and smoked products. Explore SEFA or NYDA expansion loan for dedicated delivery vehicle. Reach 10 direct employees.</p>
+    </div>
+  </div>
+
+  <h3>Critical Path Milestones</h3>
+  <table>
+    <thead>
+      <tr><th>Milestone</th><th>Target Date</th><th>Success Criteria</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Certificate of Acceptability issued</td><td>Month 5</td><td>Municipal sign-off on processing room</td></tr>
+      <tr><td>First pigs sold</td><td>Month 7</td><td>10 finishers @ 80kg to abattoir</td></tr>
+      <tr><td>Positive monthly cash flow</td><td>Month 12</td><td>Revenue exceeds operating costs</td></tr>
+      <tr><td>HACCP certification</td><td>Month 16</td><td>Third-party audit passed</td></tr>
+      <tr><td>First retail contract signed</td><td>Month 20</td><td>Spar or Chester supply agreement</td></tr>
+      <tr><td>Full break-even achieved</td><td>Month 18</td><td>Cumulative revenue covers start-up + operating costs</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 8 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">08</div>
+    <div>
+      <div class="section-title">Risk Management</div>
+      <div class="section-subtitle">Identified risks and mitigation strategies</div>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Risk Factor</th><th>Likelihood</th><th>Impact</th><th>Mitigation Strategy</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>African Swine Fever (ASF)</strong></td>
+        <td class="text-center">Medium</td>
+        <td class="text-center">Severe</td>
+        <td>Strict biosecurity: perimeter fencing, foot baths, controlled visitor access, no swill feeding, SAPPO membership for disease alerts, separate quarantine pen for new stock.</td>
+      </tr>
+      <tr>
+        <td><strong>Feed Price Volatility</strong></td>
+        <td class="text-center">High</td>
+        <td class="text-center">High</td>
+        <td>Lock in bulk contracts with local feed mills; explore on-farm mixing (maize + soya + premix) to reduce cost by 15–20%; maintain 1-month feed buffer.</td>
+      </tr>
+      <tr>
+        <td><strong>Load Shedding</strong></td>
+        <td class="text-center">High</td>
+        <td class="text-center">Medium</td>
+        <td>Solar power for refrigeration and water pumping (Phase 2); gas-powered processing equipment; insulated cold rooms to maintain temperature during outages.</td>
+      </tr>
+      <tr>
+        <td><strong>Regulatory Non-Compliance</strong></td>
+        <td class="text-center">Low</td>
+        <td class="text-center">Severe</td>
+        <td>Engage Environmental Health Officer during facility design; maintain complete traceability records; annual veterinary inspections; never process without valid Certificate of Acceptability.</td>
+      </tr>
+      <tr>
+        <td><strong>Market Access Failure</strong></td>
+        <td class="text-center">Medium</td>
+        <td class="text-center">Medium</td>
+        <td>Diversify: local direct sales + butcheries + retail. Never depend on a single channel. Build brand loyalty in the community as a foundation.</td>
+      </tr>
+      <tr>
+        <td><strong>Cash Flow Crunch</strong></td>
+        <td class="text-center">Medium</td>
+        <td class="text-center">High</td>
+        <td>Maintain R15,000 contingency reserve; start with bought weaners for faster first-turn cash; stagger farrowing to ensure monthly sales rather than seasonal lumps.</td>
+      </tr>
+      <tr>
+        <td><strong>Abattoir Unavailability</strong></td>
+        <td class="text-center">Low</td>
+        <td class="text-center">High</td>
+        <td>Establish relationships with 2–3 registered abattoirs within 150km; book slaughter slots 2 weeks in advance; maintain transport flexibility.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Insurance &amp; Contingency</h3>
+  <ul>
+    <li><strong>Livestock insurance:</strong> Will be explored via Santam or Hollard agricultural division once herd reaches 10 sows (Year 2).</li>
+    <li><strong>Fire &amp; equipment:</strong> Basic cover for processing equipment and infrastructure via standard commercial policy.</li>
+    <li><strong>Contingency reserve:</strong> 6% of start-up capital (R15,000) held in reserve for emergencies.</li>
+  </ul>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 9 of 10</span>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">09</div>
+    <div>
+      <div class="section-title">Funding Request &amp; Appendices</div>
+      <div class="section-subtitle">Use of funds, collateral, and supporting documents</div>
+    </div>
+  </div>
+
+  <h3>Funding Requirement Summary</h3>
+  <div class="grid-2">
+    <div class="card">
+      <div class="stat">R250,000</div>
+      <h4>Total Funding Sought</h4>
+      <p>Seed capital for Phase 1 establishment. No debt service required in Year 1.</p>
+    </div>
+    <div class="card">
+      <div class="stat">Owned Land</div>
+      <h4>Collateral &amp; Equity</h4>
+      <p>Land in Ngwetsheni is unencumbered and available as security. Owner equity contribution: labour, land, and management time.</p>
+    </div>
+  </div>
+
+  <h3>Use of Funds (Detailed)</h3>
+  <table>
+    <thead>
+      <tr><th>Item</th><th>Qty</th><th>Unit Price</th><th>Total</th><th>Vendor / Source</th></tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="5" style="background:#f0e6ff;font-weight:700;">INFRASTRUCTURE (R120,000)</td></tr>
+      <tr><td>Farrowing pen construction</td><td>2</td><td>R17,500</td><td class="text-right">R35,000</td><td>Local builder / self-build</td></tr>
+      <tr><td>Grower pen construction</td><td>4</td><td>R11,250</td><td class="text-right">R45,000</td><td>Local builder / self-build</td></tr>
+      <tr><td>Boar pen</td><td>1</td><td>R12,000</td><td class="text-right">R12,000</td><td>Local builder</td></tr>
+      <tr><td>Feed storage shed</td><td>1</td><td>R8,000</td><td class="text-right">R8,000</td><td>Local builder</td></tr>
+      <tr><td>Water tank &amp; reticulation</td><td>1 system</td><td>R10,000</td><td class="text-right">R10,000</td><td>Hardware / JoJo Tanks</td></tr>
+      <tr><td>Perimeter fencing</td><td>1 system</td><td>R10,000</td><td class="text-right">R10,000</td><td>Local fencing contractor</td></tr>
+      <tr><td colspan="5" style="background:#f0e6ff;font-weight:700;">BREEDING STOCK (R65,000)</td></tr>
+      <tr><td>Pregnant gilts/sows</td><td>4</td><td>R8,000</td><td class="text-right">R32,000</td><td>SAPPO-accredited breeder</td></tr>
+      <tr><td>Registered boar</td><td>1</td><td>R15,000</td><td class="text-right">R15,000</td><td>SAPPO-accredited breeder</td></tr>
+      <tr><td>Weaners (starter stock)</td><td>10</td><td>R1,800</td><td class="text-right">R18,000</td><td>Local farmer / breeder</td></tr>
+      <tr><td colspan="5" style="background:#f0e6ff;font-weight:700;">PROCESSING EQUIPMENT (R50,000)</td></tr>
+      <tr><td>Stainless steel tables</td><td>2</td><td>R4,000</td><td class="text-right">R8,000</td><td>Restaurant supply / local fabricator</td></tr>
+      <tr><td>Industrial meat mincer</td><td>1</td><td>R12,000</td><td class="text-right">R12,000</td><td>Butcher equipment supplier</td></tr>
+      <tr><td>Sausage stuffer (30L)</td><td>1</td><td>R15,000</td><td class="text-right">R15,000</td><td>Butcher equipment supplier</td></tr>
+      <tr><td>Chest freezer (500L)</td><td>1</td><td>R8,000</td><td class="text-right">R8,000</td><td>Game / Makro</td></tr>
+      <tr><td>Vacuum packer</td><td>1</td><td>R5,000</td><td class="text-right">R5,000</td><td>Restaurant supply</td></tr>
+      <tr><td>Trade scale</td><td>1</td><td>R2,000</td><td class="text-right">R2,000</td><td>Scale supplier</td></tr>
+      <tr><td colspan="5" style="background:#f0e6ff;font-weight:700;">WORKING CAPITAL (R15,000)</td></tr>
+      <tr><td>Feed, vaccines, transport, packaging</td><td>3 months</td><td>R5,000/mo</td><td class="text-right">R15,000</td><td>Various</td></tr>
+      <tr class="font-bold" style="background:#1e1b4b;color:white;"><td colspan="3">GRAND TOTAL</td><td class="text-right">R250,000</td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Supporting Documents Available on Request</h3>
+  <ul>
+    <li>CIPC Company Registration Certificate — Ingcambu Traiding PTY LTD</li>
+    <li>SARS Tax Clearance Certificate</li>
+    <li>Proof of land ownership / permission to use (Ngwetsheni)</li>
+    <li>Identity documents of directors</li>
+    <li>3-year financial projections (Excel model)</li>
+    <li>Quotations for infrastructure and equipment</li>
+    <li>Letter of intent from [Local Butchery Name] (pending)</li>
+  </ul>
+
+  <div class="success-box">
+    <h4>Our Commitment to Funders</h4>
+    <p style="margin:0;">Every rand of this R250,000 will be accounted for through formal invoices and bank records. We commit to quarterly progress reports, site visits, and full transparency on production numbers, sales, and challenges. We are not just asking for money — we are asking for a partnership in building something lasting for Ngwetsheni.</p>
+  </div>
+
+  <div style="text-align:center; margin-top:40px; padding:30px; background: linear-gradient(135deg, #f0e6ff, #fce7f3); border-radius: 15px;">
+    <p style="font-family:'Montserrat',sans-serif; font-weight:700; color:var(--dark); font-size:1.1rem; margin-bottom:10px;">Thank you for considering Ingcambu Traiding PTY LTD</p>
+    <p style="color:var(--gray); margin:0;">Ngwetsheni Location, Mount Frere, Eastern Cape, 5090<br>
+    Contact: Praiseman Yamkela Nongqotho | 062 596 2895 | npraiseman@gmail.com</p>
+  </div>
+
+  <div class="page-footer">
+    <span>Ingcambu Traiding PTY LTD</span>
+    <span class="confidential">Confidential</span>
+    <span>Page 10 of 10</span>
+  </div>
+</div>
+
+</body>
+</html>
